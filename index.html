@@ -6,11 +6,94 @@
 
 <html lang="en">
     <head>
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="styles.css" rel="stylesheet">
-        <title>Chibi's Personal Page</title>
+        <title>Demon Queen's Personnel File</title>
+        <!-- links to boostrap and various different fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <meta charset = "utf-8>"
+        <meta name = "viewport" content = "device-width, initial-scale = 1, shrink-to-fit = no">         <!-- border-left property is used to create a vertical line -->
+        <!-- adding a css sheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src = "main.js"></script>
     </head>
+
     <body>
-        Hello Netizens!
+        <!-- Include Jquery Version 3.5.1-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+         <!-- Next we should add a navigation bar -->
+         <nav class="navbar navbar-expand-md">
+              <a class="navbar-brand" href="https://images.app.goo.gl/ryWu2294BECsCtph8">Cult of Cthulhu</a>
+              <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/info_extraneous.html">The Altar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/info_hobby">Great Old Ones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/info_hobby">Great Ones</a></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Outer Gods</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Elder Gods</a>
+                  </li>
+                  <li class = "nav-item">
+                      <a class = "nav-link" href = "#">The Eldrich Creatures</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Creatures's Human Resources</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+        <header class = "page-header header container-fluid">
+            $(document).ready(function(){
+              $('.header').height($(window).height());
+            })
+        </header>
+        <!--<div class = "overlay"></div>-->
+        <div class = "container">
+        <div class = "row">
+          <div class = "description">
+            <div class = "col-sm-12">
+              <h1 style = "text-align: center;">Turn Back While You Still Can!</h1>
+              <p>Welcome, mere mortals! You have landed on the Demon Queen's Page - the Head Priest of the Cult of Cthulhu. Our god dwells in the deepest of the sea and he shall come back and bless us by the end of 2020....along with Godzilla and Colsuss. When this happens, his greatest minions, The Eldrich Creatures, shall come and join us.</p></br>
+              </br>
+              <p>Still here are you? Okay then, you have been warned. To join us, please go to <href link = "">to sign the contract with OUR God and to learn more about the High Priestess.</href></p>
+              <div class = "text-center">
+                <button class = "btn btn-outline-secondary btn-lg">Click here to join Cthulhu's army</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Time to create a grid -->
+        <div class = "container">
+                  <!--<div class = "container features">-->
+          <div class = "row">
+            <div class = "col-lg-4 col-md-4 col-sm-12">
+              <img src = "https://pbs.twimg.com/media/D5IQNm2UUAEYZCo?format=jpg&name=medium" class = "img-fluid">
+              <p>Horror Bosses</p>
+            </div>
+            <div class = "col-lg-4 col-md-4 col-sm-12">
+              <img src = "https://cdna.artstation.com/p/assets/images/images/013/721/730/medium/kory-cromie-lovecraft-boss-as.jpg?1540847627" class = "img-fluid">
+              <p>Horror Summoning</p>
+            </div>
+            <div class = "col-lg-4 col-md-4 col-sm-12">
+              <img src = "https://cdn.arstechnica.net/wp-content/uploads/sites/3/2016/07/Brisela-Voice-of-Nightmares-Eldritch-Moon-MtG-Art.jpg" class = "img-fluid">
+              <p>Eldrich Creatures</p>
+            </div>
+          </div>
+        </div>
+
     </body>
 </html>
