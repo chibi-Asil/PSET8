@@ -147,3 +147,31 @@ body {
   color: white;
   transform: rotateY(180deg);
 }
+
+/* Background and font for ordered list */
+/* Documentation: https://css-tricks.com/ordered-lists-unicode-symbols/ */
+ol {
+  margin-left:40px;
+  list-style:decimal url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7);
+}
+
+.dicey li:nth-child(1n):before {position:absolute;left:-1em;}
+
+/* Actually set markers with pseudo element unicode */
+.dicey li:nth-child(1):before {content: "\2680";}
+.dicey li:nth-child(2):before {content: "\2681";}
+.dicey li:nth-child(3):before {content: "\2682";}
+.dicey li:nth-child(4):before {content: "\2683";}
+.dicey li:nth-child(5):before {content: "\2684";}
+.dicey li:nth-child(6):before {content: "\2685";}
+.dicey li:nth-child(7):before {content: "\2686";}
+.dicey li:nth-child(8):before {content: "\2687";}
+.dicey li:nth-child(9):before {content: "\2688";}
+
+.color_text, a.color_text {
+    color: white;
+}
+
+.color_li{
+    color: #ffffff;
+}
