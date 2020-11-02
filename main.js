@@ -44,3 +44,7 @@ $("#send").on("click", function(){
 	else if(msglen >= 4){
 		$("#msg").removeClass("error");
 	}
+$("a#thing_to_click").on('click', function(){
+     window.location = "/the_real_landing_page";
+});
+
