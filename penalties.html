@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- Homepage -->
+<!-- Build a simple homepage using HTML, CSS, and JavaScript. -->
+<!-- Access server by going to http-server -->
+<!-- https://cs50.harvard.edu/extension/2020/fall/psets/8/homepage -->
+
+<html lang="en">
+    <head>
+        <title>Demon Queen's Personnel File</title>
+        <!-- links to boostrap and various different fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- <link href="styles.css" rel="stylesheet"> -->
+        <meta charset = "utf-8>"
+        <meta name = "viewport" content = "device-width, initial-scale = 1, shrink-to-fit = no">         <!-- border-left property is used to create a vertical line -->
+        <!-- adding a css sheet -->
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src = "main.js"></script>
+        <style>
+          ol { counter-reset: item; }
+          ol li { display: block; }
+          ol li:before {
+            content: counter(item) ". ";
+            counter-increment: item;
+            color: white;
+        }
+        </style>
+    </head>
+
+    <body>
+        <!-- Include Jquery Version 3.5.1-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+         <!-- Next we should add a navigation bar -->
+         <nav class="navbar navbar-expand-md">
+              <a class="navbar-brand" href="https://images.app.goo.gl/ryWu2294BECsCtph8">Cult of Cthulhu</a>
+              <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="main-navigation">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/the_real_landing_page">The Altar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/amendments">Rules</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">High Priestess</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Elder Gods</a>
+                  </li>
+                  <li class = "nav-item">
+                      <a class = "nav-link" href = "#">The Eldrich Creatures</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Creatures's Human Resources</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+        <header class = "page-header header container-fluid">
+            $(document).ready(function(){
+              $('.header').height($(window).height());
+            })
+        </header>
+        <!--<div class = "overlay"></div>-->
+        <div class = "container">
+        <div class = "row">
+          <div class = "description">
+            <div class = "col-sm-12">
+              <h1 style = "text-align: center;">READ AND PAY ATTENTION FOOL. FOR THESE RULES MAY SAVE YOUR LIFE</h1>
+              <div id = "color_text">
+                <ol class = "dicey">
+                <a class = "color_text">
+                  <li class = "color_li">
+                    Amendment 1: Our ONE and ONLY god is Cthulhu. May he always bless us with his power. There are no other Gods than him.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 2: Chibi is the High Priestess. All changes and amendments have to be approved by her. You may submit amendments and changes but she can tell you nope - REJECTED
+                  </li>
+                  <li class = "color_li">
+                    Amendment 3: Chibi will add as many amendments as she wants. You guys have no veto power nor rights.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 4: Every cult member will workout for 99 consecutive days.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 5: The minimum requirement for completing that said workout is to do at least 30 minutes of an activity that you seem fit. It may be hiking, swimming, lifting weights, yoga, etc.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 6: The things that happened in the Cult, shall remain within the Cult.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 7: If you miss any subsequent days, those punishments will become cumulative and will require to be completed in the same workout routine.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 8: If you miss more than 21 days, Chibi shall own your soul in perpetuity. However, if you are cat and Attoo, she will own your first child's soul in perpetuity.
+                  </li>
+                  <li class = "color_li">
+                    Amendment 9: If you wish to drop out, LOL good luck. There is no such thing as dropping out and quitting.
+                  </li>
+                </ol>
+              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      <!-- Time to create a grid -->
+      <div class = "container">
+        <div class = "row">
+
+          <div class = "col-lg-4 col-md-4 col-sm-12">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src="/image/fire_elsa.jpeg" class = "img-fluid">
+                </div>
+                <div class="flip-box-back">
+                  <img src="/image/horror_boss.jpeg" class = "img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-lg-4 col-md-4 col-sm-12">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "/image/cinderella.jpg" class = "img-fluid">
+                </div>
+                <div class="flip-box-back">
+                  <img src="/image/giant_fly.jpg" class = "img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class = "col-lg-4 col-md-4 col-sm-12">
+            <div class="flip-box">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <img src = "/image/stitch.png" class = "img-fluid">
+                </div>
+                <div class="flip-box-back">
+                  <img src="/image/two_head.jpg" class = "img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>
